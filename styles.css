@@ -1,0 +1,445 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a; /* Dark background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff5722; /* Orange */
+    color: #fff;
+}
+
+.login-btn {
+    background: #ff5722; /* Orange */
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero .btn {
+    background: #ff5722; /* Orange */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: #e64a19; /* Darker orange */
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Bike Container */
+.bike-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bike {
+    border: 1px solid #444; /* Dark border */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    background: rgba(0, 0,  0, 0.9); /* Dark background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bike:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.bike img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.bike h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #ff5722; /* Orange */
+}
+
+.bike p {
+    font-size: 1.2rem;
+    color: #fff; /* White text */
+}
+/* Add to Cart Button */
+.addToCart {
+    background-color: #ff6600; /* Attractive orange color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.addToCart:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+/* Add to Cart Icon */
+.addToCart i {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: #fff; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Login Form */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff5722; /* Orange */
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #fff; /* White text */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.login-form input:focus {
+    border: 1px solid #ff5722; /* Orange */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff5722; /* Orange */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-form button:hover {
+    background: #e64a19; /* Darker orange */
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bike-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bike {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+/* Default (Dark Mode) Styles */
+:root {
+    --bg-color: #1a1a1a; /* Dark background */
+    --text-color: #fff; /* White text */
+    --header-bg: rgba(0, 0, 0, 0.8);
+    --section-bg: rgba(0, 0, 0, 0.8);
+    --btn-bg: #ff5722;
+    --btn-hover-bg: #e64a19;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    --bg-color: #f4f4f4; /* Light background */
+    --text-color: #000; /* Black text */
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --section-bg: rgba(255, 255, 255, 0.9);
+    --btn-bg: #ff5722;
+    --btn-hover-bg: #e64a19;
+}
+
+/* Apply Variables */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--header-bg);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Links */
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: var(--btn-bg);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--text-color);
+    padding: 150px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .btn {
+    background: var(--btn-bg);
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .btn:hover {
+    background: var(--btn-hover-bg);
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background: var(--section-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--header-bg);
+    color: var(--text-color);
+}
+
+/* Light Mode Specific Styles */
+.light-mode nav ul li a:hover {
+    color: #fff;
+}
+
+.light-mode .bike {
+    border: 1px solid #ddd;
+}
+.addTocart {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.addTocart:hover {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.addTocart:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
